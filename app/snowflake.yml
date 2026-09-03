@@ -1,0 +1,23 @@
+definition_version: "2"
+
+entities:
+  cgfs_fraud_app:
+    type: snowflake-app
+    identifier:
+      name: CGFS_FRAUD_APP
+      database: CGFS_FRAUD_DEMO
+      schema: PUBLIC
+    artifacts:
+      - src: ./*
+        dest: ./
+        ignore:
+          - node_modules
+          - .env*
+          - __pycache__
+          - "*.pyc"
+          - .next
+          - .git
+          - snowflake.log
+
+    query_warehouse: CGFS_DEMO_WH
+    code_workspace: CGFS_FRAUD_DEMO.PUBLIC.SNOWFLAKE_APPS

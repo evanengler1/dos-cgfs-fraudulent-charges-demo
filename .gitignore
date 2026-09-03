@@ -1,0 +1,27 @@
+# Dependencies
+app/node_modules/
+
+# Next.js build
+app/.next/
+app/tsconfig.tsbuildinfo
+
+# Environment
+app/.env*
+!app/.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Snowflake
+snowflake.log
+app/snowflake.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Cortex Code plans
+.snowflake/cortex/
